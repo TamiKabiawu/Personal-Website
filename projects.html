@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <!--javascript code that preloads images so that it doesn't lag-->
+    <script type="text/javascript">
+
+      var images = new Array();
+      
+      function preloadImages(){
+      
+          for (x=0; x < preloadImages.arguments.length; x++){
+      
+               images[x] = new Image();
+      
+              images[x].src = preloadImages.arguments[x];
+      
+          }
+      
+      }
+      
+      preloadImages("images/about.jpng", "images/background.jpg", "images/book.jpg", "images/facebook.png", "images/instagram.png", "images/linkedin.jpeg", "images/projects.jpg", "images/resumes.jpg", "images/rock.jpg", "images/selfPicture.jpeg", "images/sky.gif", "images/socials.jpg");
+      
+      </script>
+     <!--this is where I use a bootstrap navbar adapted from the bootstrap website-->
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Tami Kabiawu's Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="resume.html">Resume</a>
+            <a class="nav-link" href="projects.html">Projects</a>
+            <a class="nav-link" href="socialmedia.html">Social Media</a>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container">
+      <h5>Coding Projects</h5>
+        <p style="text-align:center">1) Protest Registry And Sign-up Website: utilized firebase, html, css, and javascript in creating website in which users can publicize protests occuring in their area. Other users were then able to sign up for protests and indicate how many indivuals they are attending with.
+          Aaims to allow individuals to better organize protests that are more successful in creating effective change</p>
+        <p style="text-align:center">2) AniLarm: Python program that uses haarcascades (a machine learning object detection algorithm) and python to accurately detect animals that may harm farmers’ crops and alert farmers to their presence. Created the user interface that allowed users to view what the camera was recording and
+           provided visual and audible alerts for when animals were detected.</p>
+        <p style="text-align:center">More projects coming in the future...</p>
+    </div>
+
+</body>
+</html>
